@@ -1,0 +1,112 @@
+.country_details {
+    margin: 15px auto 0;
+    padding: 15px;
+    max-width: 1400px;
+    min-height: 100vh;
+}
+
+.back {
+    background-color: white;
+    border: 0;
+    outline: 0;
+    margin-bottom: 25px;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.country_details_body {
+    margin: 15px auto 0;
+    padding: 15px;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.img_container{
+    flex:0.5;
+}
+
+.img_container img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.info {
+    flex:0.5;
+}
+
+.info_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.info h2 {
+    margin-bottom: 15px;
+}
+
+.values {
+    color:Gray;
+}
+
+.border_country {
+    padding:5px 10px;
+    background-color: rgb(211, 208, 208);
+    display: inline-block;
+    margin: 10px;
+    cursor:pointer;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+
+}
+
+
+
+/*Dark mode*/
+.back.darkMode {
+    background-color: var(--dark-mode-elements);
+    color: white;
+}
+
+
+.info.darkMode{
+    color: white;
+}
+
+
+.info .values.darkMode {
+    color: lightgray;
+}
+
+
+.border_country.darkMode {
+    background-color: var(--dark-mode-elements);
+    color: white;
+}
+
+
+
+@media (max-width :800px) {
+
+    .country_details_body {
+        flex-direction: column;
+    }
+
+    .info_container {
+        flex-direction: column;
+        align-items:start;
+    }
+
+    .left_info {
+        margin-bottom: 20px;
+    }
+}

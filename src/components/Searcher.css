@@ -1,0 +1,86 @@
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search_input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    gap:5px;
+    
+}
+
+.search_input input {
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    font-size: 18px;
+}
+
+.select_region {
+    width: 300px;
+    background-color: white;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.select_region select{
+    width: 100%;
+    background-color:transparent;
+    padding: 5px;
+    border:none;
+    outline: none;
+}
+
+
+.search_input.darkMode{
+    background-color: var(--dark-mode-elements);
+    color: white;
+    
+}
+
+.search_input.darkMode input{
+    background-color: var(--dark-mode-elements);
+    color: white;
+    
+}
+
+.select_region.darkMode{
+    background-color: var(--dark-mode-elements);
+    color: white;
+}
+
+.select_region.darkMode select {
+    color: white;
+}
+
+.select_region.darkMode option {
+    background-color: var(--dark-mode-elements);
+    color: white;
+}
+
+.search_input.darkMode input::placeholder {
+    color: white;
+}
+
+
+@media (max-width :800px) {
+
+    .inputs {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .search_input {
+        margin-bottom: 20px;
+    }
+}

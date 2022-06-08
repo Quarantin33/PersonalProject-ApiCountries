@@ -1,0 +1,39 @@
+:root {
+    --dark-mode-elements:hsl(209,23%,22%);
+    --dark-mode-bg: hsl(207,26%,17%);
+    --light-mode-elements: #fff;
+    --light-mode-bg: hsl(0,0%,98%);
+}
+
+
+.header {
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+
+.header.darkMode{
+    background-color: var(--dark-mode-elements);
+    color: white;
+    
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+.switch-mode{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+
+
